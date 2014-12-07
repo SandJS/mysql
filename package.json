@@ -1,0 +1,29 @@
+{
+  "name": "sand-mysql",
+  "version": "0.0.1",
+  "description": "MySQL Wrapper",
+  "main": "lib/mysql.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pocketly/sand-mysql"
+  },
+  "keywords": [
+    "sand",
+    "grain",
+    "mysql"
+  ],
+  "author": "Kevin Smithson <ksmithson@pocketly.com>",
+  "homepage": "https://github.com/pocketly/sand-mysql",
+  "bugs": {
+    "url": "https://github.com/pocketly/sand-mysql/issues"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^0.14.0",
+    "sand-extend": "0.0.1",
+    "sand-grain": "0.0.1"
+  }
+}
