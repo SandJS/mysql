@@ -1,6 +1,6 @@
 {
   "name": "sand-mysql",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "MySQL Wrapper",
   "main": "lib/mysql.js",
   "scripts": {
@@ -23,6 +23,6 @@
   "license": "ISC",
   "dependencies": {
     "mysql2": "^0.14.0",
-    "sand-grain": "0.0.12"
+    "sand-grain": "0.1.1"
   }
 }
