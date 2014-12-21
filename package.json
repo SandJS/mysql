@@ -22,7 +22,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "mysql": "^2.5.4",
+    "mysql2": "^0.14.1",
     "sand-grain": "0.1.1"
   }
 }
