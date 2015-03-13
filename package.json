@@ -25,5 +25,8 @@
     "knex": "^0.7.5",
     "mysql": "^2.5.5",
     "sand-grain": "^1.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
   }
 }
