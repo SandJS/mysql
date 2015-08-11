@@ -23,6 +23,7 @@
   "license": "ISC",
   "dependencies": {
     "@whym/dollar": "^2.0.0",
+    "co": "sazze/co",
     "knex": "^0.7.5",
     "mysql": "^2.5.5",
     "sand-grain": "^1.0.0"
