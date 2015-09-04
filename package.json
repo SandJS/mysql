@@ -22,11 +22,10 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@whym/dollar": "^2.0.0",
     "knex": "^0.7.5",
     "lodash": "^3.10.1",
     "mysql": "^2.5.5",
-    "sand-grain": "^1.0.0"
+    "sand-grain": "^1.1.1"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
