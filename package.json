@@ -4,7 +4,7 @@
   "description": "MySQL Wrapper",
   "main": "lib/mysql.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -22,12 +22,19 @@
   },
   "license": "ISC",
   "dependencies": {
+    "co": "sazze/co",
+    "co-bind": "^1.0.0",
     "knex": "^0.7.5",
     "lodash": "^3.10.1",
     "mysql": "^2.5.5",
+    "pasync": "^1.4.0",
     "sand-grain": "^1.1.1"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.2",
+    "should": "^7.1.0"
   }
 }
