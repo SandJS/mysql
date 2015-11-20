@@ -1,6 +1,6 @@
 {
   "name": "sand-mysql",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "MySQL Wrapper",
   "main": "lib/mysql.js",
   "scripts": {
