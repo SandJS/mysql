@@ -4,6 +4,8 @@ const mysql = require('..');
 
 describe('Connection', function() {
 
+  it ('should auto reconnect on connection lost');
+
   describe('query', function() {
 
     it('should deliver sql and bindings to a mysql library');
