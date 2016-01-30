@@ -24,6 +24,7 @@
   "dependencies": {
     "co": "sazze/co",
     "co-bind": "^1.0.0",
+    "debug": "^2.2.0",
     "knex": "^0.7.5",
     "lodash": "^3.10.1",
     "mysql": "^2.5.5",
