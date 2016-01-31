@@ -24,7 +24,7 @@
   "dependencies": {
     "co": "sazze/co",
     "co-bind": "^1.0.0",
-    "concurrent-memoize": "^0.0.5",
+    "concurrent-memoize": "^0.0.6",
     "debug": "^2.2.0",
     "knex": "^0.7.5",
     "libstats": "0.0.2",
