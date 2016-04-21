@@ -43,6 +43,8 @@ All properties listed below are attached to the same config object.
 | password | string | Yes | User's password for connecting to your database server. For more info, see [node-mysql](https://github.com/felixge/node-mysql#connection-options).
 | database | string | Yes | Name of your database. For more info, see [node-mysql](https://github.com/felixge/node-mysql#connection-options).
 
+These are the **required** properties for `node-mysql`; however, all `node-mysql` properties are valid as well.
+
 ##### sand-mysql specific
 
 | Property Name | Type | Required | Description
