@@ -10,7 +10,7 @@ up connections, since `sand-http` will handle cleanup automatically when the req
 
 ## Install
 
-`npm install sand-mysql`
+`npm install --save sand-mysql`
 
 ## Usage
 
