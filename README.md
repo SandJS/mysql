@@ -50,7 +50,7 @@ These are the **required** properties for `node-mysql`; however, all `node-mysql
 | Property Name | Type | Required | Description
 | --- | --- | --- | --- | ---
 | modifyRows | function |  | This hook will allow you to modify all results returned from the raw database query. The callback must be invoked with the desired result to be returned. `function modifyRows(err, rows, function callback(err, rows))`
-
+| autoReconnect | bool |  | Allow sand to auto reconnect enqueue errors (Default: true) |
 
 
 ## Grain API
