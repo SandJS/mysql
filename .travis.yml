@@ -22,7 +22,7 @@ script:
   - "npm test"
 
 env:
-  - MYSQL_TYPE=mysql MYSQL_HOST=localhost MYSQL_DATABASE=sand_mysql MYSQL_USER=root MYSQL_PASSWORD=
+  - MYSQL_HOST=localhost MYSQL_DATABASE=sand_mysql MYSQL_USER=root MYSQL_PASSWORD=
 
 mysql:
   adapter: mysql2
