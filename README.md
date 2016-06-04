@@ -1,5 +1,7 @@
 # MySQL Grain for Sand.js
 
+[![Build Status](https://travis-ci.org/SandJS/mysql.svg?branch=master)](https://travis-ci.org/SandJS/mysql)
+
 This grain provides convenience functions working with MySQL.
 
 These convenience functions include autoloading config, automatic connection setup and cleanup, basic querying, querying for a single row, update query building, insert query building, support for prepared statements (although please note that this uses [node-mysql](https://github.com/felixge/node-mysql) which does not use prepared statements under the hood as far as I know).
