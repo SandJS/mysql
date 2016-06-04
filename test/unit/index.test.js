@@ -1,7 +1,5 @@
 "use strict";
 
-const mysql = require('../..');
-const Connection = require('../../lib/Connection');
 const co = require('co');
 
 function verifyQuery(mysql) {
@@ -15,8 +13,7 @@ function select1Query(mysql) {
 }
 
 
-describe('Connection', function() {
-
+describe('Auto Reconnect', function() {
   it('should auto reconnect on connection lost after timeout', function (done) {
     sand.runInContext(function*() {
       // Lets set the timeouts to 1 so it crashes
@@ -34,11 +31,11 @@ describe('Connection', function() {
 
         yield new Promise(() => {
           setTimeout(() => {
-              co(function *() {
-                  let res = yield sand.ctx.mysql.selectOne('select 1 as value');
-                  res.value.should.be.equal(1);
-                done();
-              });
+            co(function *() {
+              let res = yield sand.ctx.mysql.selectOne('select 1 as value');
+              res.value.should.be.equal(1);
+              done();
+            });
           }, 1100);
         });
       });
@@ -56,7 +53,7 @@ describe('Connection', function() {
   });
 
   it('should not auto reconnect if turned off', function *() {
-    let mysql = newMySQLConnection({ autoReconnect: false });
+    let mysql = newMySQLConnection({autoReconnect: false});
     yield verifyQuery(mysql);
 
     // Destroy mysql to simulate dropped connection
@@ -64,6 +61,21 @@ describe('Connection', function() {
 
     verifyQuery(mysql).should.be.rejected;
   });
+});
+
+describe('selectOne', function() {
+
+  it('should return a single object as a result of a query', function *() {
+    let mysql = newMySQLConnection();
+
+    let res = yield mysql.selectOne('select * from (select 1 union select 2 union select 3) temp');
+
+    res.should.be.an.object
+    res.should.have.property(1);
+  });
+
+});
+
 
 //   describe('query', function() {
 //
@@ -71,11 +83,6 @@ describe('Connection', function() {
 //
 //   });
 //
-//   describe('selectOne', function() {
-//
-//     it('should return a single object as a result of a query');
-//
-//   });
 //
 //   describe('insert', function() {
 //
@@ -163,4 +170,4 @@ describe('Connection', function() {
 //
 //   });
 //
-});
+// });
