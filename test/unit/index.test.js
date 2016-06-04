@@ -62,7 +62,7 @@ describe('Connection', function() {
     // Destroy mysql to simulate dropped connection
     mysql.destroy();
 
-    verifyQuery(mysql).should.be.rejected();
+    verifyQuery(mysql).should.be.rejected;
   });
 
 //   describe('query', function() {
