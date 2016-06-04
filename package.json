@@ -4,7 +4,7 @@
   "description": "MySQL Wrapper",
   "main": "lib/mysql.js",
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/mocha/bin/mocha --require should --delay test/run.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "knex": "^0.7.5",
     "libstats": "0.0.2",
     "lodash": "^3.10.1",
+    "mocha": "^2.5.3",
     "mysql": "^2.5.5",
     "pasync": "^1.4.0",
     "sand-abstract-model": "git+https://github.com/SandJS/abstract-model.git",
@@ -38,7 +39,10 @@
     "registry": "http://registry.npmjs.org"
   },
   "devDependencies": {
-    "mocha": "^2.3.2",
+    "co": "sazze/co",
+    "co-mocha": "^1.1.2",
+    "mocha": "^2.5.3",
+    "sand": "^1.6.2",
     "should": "^7.1.0"
   }
 }

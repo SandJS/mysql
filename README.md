@@ -89,3 +89,10 @@ The Connection object is a Promise based wrapper around some of the most commonl
 | resume() | function |  | Wrapper for `resume()`. See `node-mysql`.
 | end() | function |  | Wrapper for `end()`. See `node-mysql`.
 | destroy() | function |  | Wrapper for `destroy()`. See `node-mysql`.
+
+## Tests
+
+```
+$ mysql -u root -e "CREATE DATABASE IF NOT EXISTS sand_mysql"
+$ MYSQL_HOST=localhost MYSQL_PORT=3306 MYSQL_DATABASE=sand_mysql MYSQL_USER=root MYSQL_PASSWORD= npm test
+```

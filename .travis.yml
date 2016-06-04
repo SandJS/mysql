@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+  - '4.4'
+  - '5.11'
+  - '6.2'
+
+sudo: false
+
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  # Update Node.js modules
+  - "test ! -d node_modules || npm prune"
+  - "test ! -d node_modules || npm rebuild"
+
+before_script:
+- "mysql -e 'create database sand_mysql; select version();'"
+
+script:
+  - "npm test"
+
+env:
+  - MYSQL_TYPE=mysql MYSQL_HOST=localhost MYSQL_DATABASE=sand_mysql MYSQL_USER=root MYSQL_PASSWORD=
+
+mysql:
+  adapter: mysql2
+  username: root
+  encoding: utf8
+  database: sand_mysql
