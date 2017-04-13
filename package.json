@@ -1,6 +1,6 @@
 {
   "name": "sand-mysql",
-  "version": "2.2.4",
+  "version": "2.2.3",
   "description": "MySQL Wrapper",
   "main": "lib/mysql.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pocketly/sand-mysql"
+    "url": "https://github.com/sandjs/mysql"
   },
   "keywords": [
     "sand",
@@ -16,21 +16,18 @@
     "mysql"
   ],
   "author": "Kevin Smithson <ksmithson@pocketly.com>",
-  "homepage": "https://github.com/pocketly/sand-mysql",
+  "homepage": "https://github.com/sandjs/mysql",
   "bugs": {
-    "url": "https://github.com/pocketly/sand-mysql/issues"
+    "url": "https://github.com/sandjs/mysql/issues"
   },
   "license": "ISC",
   "dependencies": {
-    "co": "sazze/co",
-    "co-bind": "^1.0.0",
     "concurrent-memoize": "^0.0.6",
     "debug": "^2.2.0",
     "knex": "^0.7.5",
     "libstats": "0.0.2",
     "lodash": "^3.10.1",
     "mysql": "^2.5.5",
-    "pasync": "^1.4.0",
     "sand-abstract-model": "0.0.0",
     "sand-grain": "^1.1.1"
   },
@@ -38,6 +35,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "devDependencies": {
+    "co": "sazze/co",
     "co-mocha": "^1.1.2",
     "mocha": "^2.5.3",
     "sand": "^1.6.2",
