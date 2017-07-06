@@ -34,7 +34,7 @@
     "registry": "http://registry.npmjs.org"
   },
   "devDependencies": {
-    "co": "sazze/co",
+    "co": "git+https://github.com/sazze/co.git#4.6.0",
     "co-mocha": "^1.1.2",
     "mocha": "^2.5.3",
     "sand": "1.8.1",

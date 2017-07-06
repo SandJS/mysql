@@ -100,7 +100,7 @@ co@^4.0.0, co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npmjs.org/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
 
-"co@git+https://github.com/sazze/co.git#4.6.0", co@sazze/co:
+"co@git+https://github.com/sazze/co.git#4.6.0":
   version "4.6.0"
   resolved "git+https://github.com/sazze/co.git#6f0e022036d1c3e5393925c2f132983d0fe03d97"
 
