@@ -1,6 +1,6 @@
 {
   "name": "sand-mysql",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "MySQL Wrapper",
   "main": "lib/mysql.js",
   "scripts": {
@@ -22,7 +22,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "concurrent-memoize": "^0.0.6",
     "debug": "^2.2.0",
     "knex": "^0.7.5",
     "libstats": "0.0.2",
